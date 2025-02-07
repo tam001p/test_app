@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+env_seed_file = Rails.root.join("db", "seeds", "#{Rails.env}.rb")
+
+if File.exist?(env_seed_file)
+  puts "Seeding #{Rails.env} database..."
+  load(env_seed_file)
+else
+  puts "No seed file found for #{Rails.env}"
+end
