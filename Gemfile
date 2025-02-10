@@ -24,7 +24,7 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 gem 'robocop'
-gem 'concurrent-ruby', '1.3.4'
+gem 'concurrent-ruby', '1.3.5'
 
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
 gem "solid_cache"
